@@ -1,24 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>DISEÑO WEB</title>
-    <link rel="stylesheet" href="repositorio/css/main.css" />
-    <noscript><link rel="stylesheet" href="repositorio/css/noscript.css" /></noscript>
-    <script language="text/javascript">
-            $(function () {
-                $("#lbltipAddedComment").text(localStorage.pagecount)({
-                });
-
-                if (localStorage.pagecount) {
-                    localStorage.pagecount = Number(localStorage.pagecount) + 1;
-                } else {
-                    localStorage.pagecount = 1;
-                }
-            });
-    </script>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="repositorio/css/main.css" />
+    <!-- Scripts -->
+    <script src="repositorio/js/jquery.min.js"></script>
+    <script src="repositorio/js/skel.min.js"></script>
+    <script src="repositorio/js/util.js"></script>
+    <script src="repositorio/js/main.js"></script>
+    <script>
+        window.onload = function () {
+            if (localStorage.pagecount) 
+                localStorage.pagecount = Number(localStorage.pagecount) + 1;
+             else 
+                localStorage.pagecount = 1;                       
+            
+            $("#contador").text(localStorage.pagecount);
+        }
+      
+    </script>
+    <noscript><link rel="stylesheet" href="repositorio/css/noscript.css" /></noscript>
+    <title>DISEÑO WEB</title>
 </head>
 <body>
 
@@ -358,12 +360,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
     <!-- BG -->
     <div id="bg"></div>
-
-    <!-- Scripts -->
-    <script src="repositorio/js/jquery.min.js"></script>
-    <script src="repositorio/js/skel.min.js"></script>
-    <script src="repositorio/js/util.js"></script>
-    <script src="repositorio/js/main.js"></script>
 
 </body>
 </html>
