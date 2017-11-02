@@ -52,7 +52,7 @@ div.contador{
 
 /*menu*/
 
-nav {
+/*nav {
     display: block;
 }
 
@@ -97,7 +97,7 @@ nav {
                 nav ul li a:active {
                     background-color: rgba(255, 255, 255, 0.175);
                 }
-
+*/
 /* main*/
 
 	#main {
@@ -256,4 +256,54 @@ div.footerCentrado2{
     width:100%;
     color:white;
     font-size:12px
+}
+.franja{
+    width: 100%;
+    height: 50px;
+    background: red;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 50px;
+    background: #045FB4;
+    float: left;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+.logo p a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+    height: 50px;
+    background: #045FB4;
+    float: left;
+    text-align: right;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+ }
+nav ul li a:hover{
+    color: #444;
+}
+div.separacion{
+    height: 15px;
+    width:100%;
+    text-align:center;
 }
