@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="repositorio/css/inicio.css"/>
+    <script src="repositorio/js/jquery.min.js"></script>
+    <script src="repositorio/js/skel.min.js"></script>
+    <script src="repositorio/js/util.js"></script>
+    <script src="repositorio/js/main.js"></script>
+    <title>DISEÑO WEB</title>
+    <script>
+        window.onload = function () {
+            if (localStorage.pagecount)
+                localStorage.pagecount = Number(localStorage.pagecount) + 1;
+             else
+                localStorage.pagecount = 1;
+            //localStorage.pagecount = 1;
+            $("#contador").text(localStorage.pagecount);
+
+            var f = new Date();
+            $("#fechahoy").text(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="relative">
+                <div class="absolute1"><img src="images/logoUNAD.png" width="410px" /></div>
+                <div class="absolute">OVI. DISEÑO DE SITIOS WEB</div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="Index.html">INICIO</a></li>
+                            <li>
+                                LECTURAS
+                                <ul>
+                                    <li><a href="#lectura1">TIC</a></li>
+                                    <li><a href="#lectura2">Seguridad Informática</a></li>
+                                    <li><a href="#lectura3">Ataque Informático</a></li>
+                                    <li><a href="#lectura4">Consejos</a></li>
+                                    <li><a href="#lectura5">Amenazas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                MULTIMEDIA
+                                <ul>
+                                    <li><a href="#multimedia1">Multimedia 1</a></li>
+                                    <li><a href="#multimedia2">Multimedia 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                ACTIVIDADES
+                                <ul>
+                                    <li><a href="#actividad1">Actividad 1</a></li>
+                                    <li><a href="#actividad2">Actividad 2</a></li>
+                                    <li><a href="#actividad3">Actividad 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#autor">AUTORES</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contador">Visitas: <label id="contador"></label></div>
+            </div>
+        </div>
+    </header>
+    <br />
+    <content>
+        <div class="relativeContent">
+            <div class="absoluteContent">
+                <table class="tabla">
+                    <tr><td><h2>OVI - Objeto Virtual de Información</h2></td></tr>
+                    <tr><td><h3>Qué es ?</h3></td></tr>
+                    <tr><td id="tableContenido">Es un recurso digital diseñado para brindar información
+                            a los usuarios e interactuar con ellos.</td></tr>
+                    <tr><td id="tableContenido">Es a partir de estos que podemos entregar información
+                            a través de: Páginas Web, Blog, Correo Electrónico, Redes Sociales, etc.</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido">Según David Wiley</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido">Un objeto informativo es todo recurso digital que carece de filosofía, de teoría de
+                            aprendizaje y de instrucción, diferenciando claramente la información de la instrucción."</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td><h3>Componentes para construir un OVI</h3></td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido"><b>* Objetivos:</b> Expresan de manera explicita lo que el estudiante va a aprender.</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido"><b>* Contenidos:</b> Se refiere a los tipos de conocimiento y sus múltiples formas de representarlos, pueden ser: definiciones, explicaciones, artículos, videos, entrevistas, lecturas, etc.</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido"><b>* Elementos de Contextualizacion:</b> Permiten reutilizar el objeto en otros escenarios, como por ejemplo los textos de introducción, el tipo de licenciamiento y los créditos del objeto.Estos componentes han de tenerse en cuenta a la hora de su uso.</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td><h3>Objetivo OVI</h3></td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td id="tableContenido">* Este objeto virtual de información OVI, presenta ante usted contenidos de lectura y multimediales de tipo libre; relacionados con las temáticas de la Unidad 1 del curso, este OVI será de mucha ayuda en la ampliación de la información que puede requerir para el desarrollo de la o las actividades académicas asociadas a la presente unidad.</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                </table>
+            </div>
+            <div id="main">
+
+                <!-- LECTURAS -->
+                <article id="lectura1">
+                    <h2 class="major">Historia y desarrollo de las Tecnologías de la Información y la Comunicación</h2>
+                    <img src="images/tic.jpg" />
+                    <table>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td style="text-align:justify">Las Tecnologías de la Información y la Comunicación o TIC corresponden y se refieren a todas las tecnologías que de una u otra forma interfieren y median en los procesos informacionales y comunicativos entre seres humanos, y pueden ser entendidas como un conjunto de recursos tecnológicos integrados entre si, que proporcionan, por medio de facilidades de hardware, de software, y de telecomunicaciones, la semi-automatización y comunicación de procesos relativos a negocios, a investigación científica, a enseñanza, a aprendizaje, a cuestiones de la vida diaria, etc.<br /><br />
+                                Las TIC son utilizadas de diversas maneras y en variados campos de actividad, destacándose las industrias (procesos de automatización y de automación), los comercios (gerenciamiento, publicidad, contabilidad), las inversiones (modelos de simulación, transmisión de informaciones en forma rápida para la más oportuna toma de decisiones), las instituciones educativas (sistemas de enseñanza/aprendizaje, educación a distancia, sistemas tutoriales), etc.<br /><br />
+                                Y bien puede decirse que el principal responsable del crecimiento y potenciación de las TICs en los diversos campos, ha sido el desarrollo y la popularización de Internet.</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                    </table>
+                </article>
+
+                <article id="lectura2">
+                    <h2 class="major">Seguridad informática</h2>
+                    <img src="images/seguridadinfo.jpg" width="350px" />
+                    <table>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                La seguridad informática, también conocida como ciberseguridad o seguridad de tecnologías de la información, es el área relacionada con la informática y la telemática que se enfoca en la protección de la infraestructura computacional y todo lo relacionado con esta y, especialmente, la información contenida en una computadora o circulante a través de las redes de computadoras.1​ Para ello existen una serie de estándares, protocolos, métodos, reglas, herramientas y leyes concebidas para minimizar los posibles riesgos a la infraestructura o a la información. La ciberseguridad comprende software (bases de datos, metadatos, archivos), hardware, redes de computadoras y todo lo que la organización valore y signifique un riesgo si 
+                                esta información confidencial llega a manos de otras personas, convirtiéndose, por ejemplo, en información privilegiada.<br /><br />
+                                La definición de seguridad de la información no debe ser confundida con la de «seguridad informática», ya que esta última solo se encarga de la seguridad en el medio informático, pero la información puede encontrarse en diferentes medios o formas, y no solo en medios informáticos.<br /><br />
+                                La seguridad informática es la disciplina que se encarga de diseñar las normas, procedimientos, métodos y técnicas destinados a conseguir un sistema de información seguro y confiable.<br /><br />
+                                Puesto simple, la seguridad en un ambiente de red es la habilidad de identificar y eliminar vulnerabilidades. Una definición general de seguridad debe también poner atención a la necesidad de salvaguardar la ventaja organizacional, incluyendo información y equipos físicos, tales como los mismos computadores. Nadie a cargo de seguridad debe determinar quién y cuándo puede tomar acciones apropiadas sobre un ítem en específico. Cuando se trata de la seguridad de una compañía, lo que es apropiado varía de organización en organización. Independientemente, cualquier compañía con una red debe tener una política de seguridad que se dirija a la conveniencia y la coordinación.
+                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                    </table>
+                </article>
+
+                <article id="lectura3">
+                    <h2 class="major">Ataque informático</h2>
+                    <img src="images/ataqueInformatico.jpg" width="350px" />
+                    <table>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                Un ataque informático es un método por el cual un individuo, mediante un sistema informático, intenta tomar el control, desestabilizar o dañar otro sistema informático (ordenador, red privada, etc).<br /><br />
+                                Un ataque informático es un intento organizado e intencionado causado por una o más personas para infringir daños o problemas a un sistema informático o red. Los ataques en grupo suelen ser hechos por bandas llamados "piratas informáticos" que suelen atacar para causar daño, por buenas intenciones, por espionaje, para ganar dinero, entre otras. Los ataques suelen pasar en corporaciones.<br /><br />
+                                Un ataque informático consiste en aprovechar alguna debilidad o falla en el software, en el hardware, e incluso, en las personas que forman parte de un ambiente informático; para obtener un beneficio, por lo general de condición económica, causando un efecto negativo en la seguridad del sistema, que luego pasa directamente en los activos de la organización.<br /><br />
+                                <u>Consecuencias</u><br /><br />
+                                Los ataques informáticos tienen varias series de consecuencias o daños que un VIRUS puede causar en un sistema operativo. Hay varios tipos de daños los cuales los más notables o reconocidos son los siguientes:<br /><br />
+                                <u>Daños triviales</u><br /><br />
+                                En este tipo de daños los VIRUS que los causan son muy fáciles de remover y eliminar, por lo que se pueden quitar solo en segundos o minutos.<br /><br />
+                                <u>Daños menores</u><br /><br />
+                                En este tipo de daños se tiene que tener en cuenta el VIRUS Jerusalén. Este virus, los viernes 13, borra todos los programas que uno trate de usar después de que el virus haya infectado la memoria. Lo peor que puede suceder es que tocaría volver a instalar los programas borrados por dicho virus.<br /><br />
+                                <u>Daños moderados</u><br /><br />
+                                Este daño sucede cuando un virus formatea el DISCO DURO, y mezcla los componentes del FAT (File Allocation Table por su sigla en inglés o Tabla de Ubicación de Archivos por sus siglas en español, TUA), o también puede que sobrescriba el disco duro. Sabiendo esto se puede reinstalar el sistema operativo y usar el último backup. Esto llevara 1 hora aproximadamente.<br /><br />
+                                <u>Daños mayores</u><br /><br />
+                                Algunos VIRUS pueden pasar desapercibidos y pueden lograr que ni utilizando el backup se pueda llegar a los archivos. Un ejemplo es el virus Dark Avanger que infecta los archivos acumulando. Cuando llega a 16, el virus escoge un sector del disco duro al azar y en ella escribe: "Eddie lives... somewhere in time (Eddie vive... en algún lugar del tiempo) Cuando el usuario se percata de la existencia del virus ya será demasiado tarde pues los archivos más recientes estarán infectados con el virus.<br /><br />
+                                <u>Daños severos</u><br /><br />
+                                Los daños severos son hechos cuando los VIRUS hacen cambios mínimos y progresivos. El usuario no sabe cuando los datos son correctos o han cambiado, pues no se ve fácilmente, como en el caso del VIRUS Dark Avanger. También hay casos de virus que infectan aplicaciones que al ser descontaminadas estas aplicaciones pueden presentar problemas o perder funcionalidad.<br /><br />
+                                <u>Daños ilimitados</u><br /><br />
+                                Algunos programas como CHEEBA, VACSINA.44.LOGIN y GP1 entre otros, obtienen la clave del administrador del sistema. En el caso de CHEEBAS, crea un nuevo usuario con el privilegio máximo poniendo el nombre del usuario y la clave. El daño lo causa la tercera persona, que ingresa al sistema y podría hacer lo que quisiera.
+                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                    </table>
+                </article>
+
+                <article id="lectura4">
+                    <h2 class="major">10 consejos para prevenir un ataque informático</h2>
+                    <img src="images/ataqueinformatico2.jpg" width="350px" />
+                    <table>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                <u>Utilizar un antivirus que analice todas las descargas.</u> Asegúrate de tener un antivirus instalado, actualizado al día para que reconozca el mayor número de virus, y realiza análisis regularmente de todo el sistema.<br /><br />
+                                <u>Mantener el sistema operativo y el navegador actualizados.</u> Los virus aprovechan los agujeros del SO y navegador para infectar los dispositivos. Como contramedida los fabricantes corrigen los programas a través de actualizaciones. La mejor forma para estar protegido es activar las actualizaciones automáticas de tu SO, navegador, plugins del navegador y resto de aplicaciones.<br /><br />
+                                <u>Cuidar las contraseñas.</u> Al introducirlas se debe estar seguro de que es la página correcta, ya que puede parecer idéntica a la legítima y tratarse de una suplantación (phishing). No se debe utilizar la misma contraseña en diferentes servicios porque si acceden a una cuenta fácilmente podrán acceder al resto. Tampoco se ha de compartir las contraseñas con nadie, aunque digan que son del servicio técnico, los servicios respetables nunca solicitarán las contraseñas por propia iniciativa.<br /><br />
+                                <u>Confíar en la web, pero sin ser ingenuo.</u> Hay que permanecer alerta, no todo lo que se dice en Internet tiene por qué ser cierto. Ante la duda, contrastar la información en otras fuentes de confianza.<br /><br />
+                                <u>No hacer clic en enlaces que resulten sospechosos.</u> Se debe ser precavido antes de seguir un enlace al navegar, en el correo, en la mensajería instantánea o en una red social. Los mensajes falsos que los acompañan pueden ser muy convincentes con el fin de captar la atención del usuario y redirigirle a páginas maliciosas.<br /><br />
+                                <u>Tener cuidado con lo que se descarga.</u> No hay que precipitarse y descargarse cualquier cosa, ya que nuevas amenazas surgen cada día y los antivirus no pueden combatirlas todas. Hay que descargar los ficheros solo de fuentes confiables y los programas desde sus páginas oficiales.<br /><br />
+                                <u>Desconfíar de los correos de remitentes desconocidos.</u> Ante la duda, es recomendable no responder a los mismos y eliminarlos directamente.<br /><br />
+                                <u>No abrir ficheros adjuntos sospechosos.</u> Si es de un conocido hay que asegurarse de que realmente lo quiso enviar. Los virus utilizan esta técnica par propagarse entre los contactos del correo, así como los contactos de la mensajería instantánea y de las redes sociales.<br /><br />
+                                <u>Pensar antes de publicar.</u> Los servicios actuales de Internet facilitan las relaciones sociales, lo que conlleva a su vez se publiquen mucha información sobre las personas (datos personales, imágenes, gustos, preferencias, etc.). Dado el valor que tiene esta información, y las repercusiones negativas que puede tener su uso inadecuado por parte de otras personas, es necesario que se gestionen adecuadamente.<br /><br />
+                                <u>Conoce los riesgos asociados al uso de Internet.</u> ¡Hay que mantenerse al día! Es aconsejable estar suscrito a los boletines de correo de la OSI, que incluyen los últimos avances de actualidad.<br /><br />
+                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                    </table>
+                </article>
+
+                <article id="lectura5">
+                    <h2 class="major">Amenazas</h2>
+                    <img src="images/amenazas-informáticas.jpg" width="350px" />
+                    <table>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td style="text-align:justify">
+                                Una Amenaza es la posibilidad de ocurrencia de cualquier tipo de evento o acción que puede producir un daño (material o inmaterial) sobre los elementos de un sistema, en el caso de la Seguridad Informática, los Elementos de Información. Debido a que la Seguridad Informática tiene como propósitos de garantizar la confidencialidad, integridad, disponibilidad y autenticidad de los datos e informaciones, las amenazas y los consecuentes daños que puede causar un evento exitoso, también hay que ver en relación con la confidencialidad, integridad, disponibilidad y autenticidad de los datos e informaciones.<br /><br />
+                                Generalmente se distingue y divide en tres grupos<br /><br />
+                                <u>* Criminalidad:</u> son todas las acciones, causado por la intervención humana, que violan la ley y que están penadas por esta. Con criminalidad política se entiende todas las acciones dirigido desde el gobierno hacia la sociedad civil.<br /><br />
+                                <u>* Sucesos de origen físico:</u> son todos los eventos naturales y técnicos, sino también eventos indirectamente causados por la intervención humana.<br /><br />
+                                <u>* Negligencia y decisiones institucionales:</u> son todas las acciones, decisiones u omisiones por parte de las personas que tienen poder e influencia sobre el sistema. Al mismo tiempo son las amenazas menos predecibles porque están directamente relacionado con el comportamiento humano.
+                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                    </table>
+                </article>
+
+                <!-- MULTIMEDIA -->
+                <article id="multimedia1">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article id="multimedia2">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <!-- ACTIVIDADES -->
+                <article id="actividad1">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article id="actividad2">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article id="actividad3">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <!-- AUTORES -->
+                <article id="autor">
+                    <h2 class="major">LECTURA</h2>
+                    <span class="image main"></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </article>
+
+            </div>
+        </div>
+    </content>
+    <br />
+    
+    <footer>
+        <div class="relativefooter">
+            <div class="absolutefooter1"><img src="images/logoByN.jpg" width="320px" /></div>
+            <div class="absolutefooter">Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23<br />
+                                        PBX:(+57) 1 344 3700 Bogotá D.C., Colombia<br />
+                                        Línea nacional gratuita desde Colombia: 018000115223<br />
+                                        Atención al usuario: atencionalusuario@unad.edu.co<br />
+                                       Anticorrupción: anticorrupcion@unad.edu.co<br />
+                                        <u>Buzón de notificaciones</u>
+            </div>
+            <div class="absolutefooter2">
+                490 Sawgrass Corporate Parkway Suite 120, Sunrise, FL 33325<br />
+                Phones (954) 389 2277 - (954) 389 7188<br />
+                Toll Free (877) 385 5124)<br />
+                Fax (954) 667 6200
+            </div>
+            <div class="footerCentrado"><img src="images/certificados.jpg" width="410px" /></div>
+            <div class="footerCentrado1">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional</div>
+            <div class="footerCentrado2">Última actualización ( <label id="fechahoy"></label> ) © Copyright UNAD 2017  - Powered by Diseño de páginas Web</div>
+        </div>
+    </footer>
+</body>
+</html>
