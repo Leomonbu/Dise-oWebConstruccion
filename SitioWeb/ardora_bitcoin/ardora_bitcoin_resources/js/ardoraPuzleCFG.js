@@ -24,7 +24,7 @@ var urlOk=""; urlTime=""; urlError=""; urlAttempts="";
 var goURLOk="_blank"; goURLTime="_blank"; goURLAttempts="_blank"; goURLError="_blank"; 
 borderOk="#008000"; borderTime="#FF0000";borderError="#FF0000"; borderAttempts="#FF0000";
 var boardGame=[["0","0","0","0"],["0","0","0","0"],["0","0","0","0"],["0","0","0","0"]]; var imaSel=0; texSel=0;
-var whiteCell="ardora_bitcoin_resources/media/0.jpg'";
+var whiteCell="ardora_bitcoin_resources/media/0.jpg";
 var original="ardora_bitcoin_resources/media/original.jpg";
 var board=[["ardora_bitcoin_resources/media/cGllY2UxXzE.jpg","ardora_bitcoin_resources/media/cGllY2UyXzE.jpg","ardora_bitcoin_resources/media/cGllY2UzXzE.jpg","ardora_bitcoin_resources/media/cGllY2U0XzE.jpg"],["ardora_bitcoin_resources/media/cGllY2UxXzI.jpg","ardora_bitcoin_resources/media/cGllY2UyXzI.jpg","ardora_bitcoin_resources/media/cGllY2UzXzI.jpg","ardora_bitcoin_resources/media/cGllY2U0XzI.jpg"],["ardora_bitcoin_resources/media/cGllY2UxXzM.jpg","ardora_bitcoin_resources/media/cGllY2UyXzM.jpg","ardora_bitcoin_resources/media/cGllY2UzXzM.jpg","ardora_bitcoin_resources/media/cGllY2U0XzM.jpg"],["ardora_bitcoin_resources/media/cGllY2UxXzQ.jpg","ardora_bitcoin_resources/media/cGllY2UyXzQ.jpg","ardora_bitcoin_resources/media/cGllY2UzXzQ.jpg","ardora_bitcoin_resources/media/cGllY2U0XzQ.jpg"]]; var xAnswer=5; answer=[]; rows=6; cols=10; xKey=-1; yKey=-1; animationX=[]; animationY=[]; animationPosX=[]; animationPosY=[]; animationLetter=[];
 var words=[];letters=[]; indexLetters=0; xSel=-1; ySel=-1; iLetter=-1; jLetter=-1;
