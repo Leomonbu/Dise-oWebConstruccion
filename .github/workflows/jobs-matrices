@@ -1,0 +1,11 @@
+name: Pruebas unitarias
+on:
+  push:
+    branches: [ master ]
+jobs:
+  job1:
+    name: Pruebas
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-18.04]
